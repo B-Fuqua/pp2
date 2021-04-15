@@ -19,3 +19,8 @@
         }
         return $largest;
     }
+
+    function removeDups($numbers): array
+    {
+        return array_unique($numbers);
+    }

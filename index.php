@@ -30,6 +30,9 @@ error_reporting(E_ALL);
         $largest = largest($numbers);
 
         echo "<h2>The largest number is: $largest</h2>";
+
+        $newArray = removeDups($numbers);
+        printArr($newArray);
     ?>
 </body>
 </html>
