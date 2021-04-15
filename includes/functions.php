@@ -24,3 +24,22 @@
     {
         return array_unique($numbers);
     }
+
+    function distribution($numbers): array
+    {
+        $newArray = array();
+        foreach (removeDups($numbers) as $number)
+        {
+            $count = 0;
+            foreach ($numbers as $number2)
+            {
+                if ($number2 == $number)
+                {
+                    $count++;
+                }
+            }
+            $newArray[$number] = $count;
+        }
+        ksort($newArray);
+        return $newArray;
+    }

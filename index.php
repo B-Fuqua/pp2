@@ -33,6 +33,8 @@ error_reporting(E_ALL);
 
         $newArray = removeDups($numbers);
         printArr($newArray);
+
+        echo json_encode(distribution($numbers));
     ?>
 </body>
 </html>
